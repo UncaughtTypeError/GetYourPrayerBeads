@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+// Constants
+import { UPGRADES_FILE_PATH } from '../constants/constants';
 // Components
 import PageTitle from '../components/PageTitle';
 import Items from '../components/views/Items';
@@ -30,7 +32,7 @@ function Upgrades(props) {
       <PageTitle pagetitle={pagetitle} />
       <div className={classes.wrapper}>
         <FiltersProvider dataFilters={upgradesFilters}>
-          <Items data={upgrades} dataGeneral={upgradesGen} />
+          <Items data={upgrades} dataGeneral={upgradesGen} dataFilePath={UPGRADES_FILE_PATH} />
         </FiltersProvider>
       </div>
     </div>

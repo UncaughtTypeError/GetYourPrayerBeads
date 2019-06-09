@@ -74,7 +74,7 @@ const TextChip = withStyles({
 class ItemCard extends React.Component {
 
   render() {
-    const { classes, data, dataGeneral } = this.props;
+    const { classes, data, dataGeneral, dataFilePath } = this.props;
 
     return (
       <Card className={classes.card}>
@@ -84,7 +84,7 @@ class ItemCard extends React.Component {
           offsetVertical={500}
           className={classes.lazyLoad}
         >
-          <ImageLoader data={data} />
+          <ImageLoader data={data} dataFilePath={dataFilePath} />
         </LazyLoad>
         <CardContent>
           <Typography variant="subtitle1" component="h3">

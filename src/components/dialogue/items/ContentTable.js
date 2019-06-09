@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 // Constants
-import { BASE_IMG_URL } from '../../../constants/constants';
+import { BASE_IMG_URL, THUMBNAILS_FILE_PATH } from '../../../constants/constants';
 // Material Components
 import Chip from '@material-ui/core/Chip';
 import Typography from '@material-ui/core/Typography';
@@ -58,7 +58,7 @@ class ContentTable extends React.Component {
               data.usage.map(row => (
                 <TableRow key={row.id} className={classes.dataRow}>
                   <TableCell scope="row" width="70">
-                    <img src={BASE_IMG_URL+row.img} alt={row.upgrade} />
+                    <img src={BASE_IMG_URL+THUMBNAILS_FILE_PATH+row.img} alt={row.upgrade} />
                   </TableCell>
                   <TableCell scope="row">
                     {row.upgrade}
@@ -71,7 +71,7 @@ class ContentTable extends React.Component {
               data.upgrades.map(row => (
                 <TableRow key={row.id} className={classes.dataRow}>
                   <TableCell scope="row" width="70">
-                    <img src={BASE_IMG_URL+row.img} alt={row.upgrade} />
+                    <img src={BASE_IMG_URL+THUMBNAILS_FILE_PATH+row.img} alt={row.upgrade} />
                   </TableCell>
                   <TableCell scope="row">
                     {row.upgrade}
@@ -84,7 +84,7 @@ class ContentTable extends React.Component {
               data.materials.map(row => (
                 <TableRow key={row.id} className={classes.dataRow}>
                   <TableCell scope="row" width="70">
-                    <img src={BASE_IMG_URL+row.img} alt={row.material} />
+                    <img src={BASE_IMG_URL+THUMBNAILS_FILE_PATH+row.img} alt={row.material} />
                   </TableCell>
                   <TableCell scope="row">
                     {row.item}

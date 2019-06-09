@@ -56,7 +56,7 @@ class ItemImageLoader extends React.Component {
 
   render() {
   
-    let { classNames, loadedClassName, loadingClassName, classes, data } = this.props;
+    let { classNames, loadedClassName, loadingClassName, classes, data, dataFilePath } = this.props;
 
     classNames = this.state.loaded ? loadedClassName : loadingClassName;
 
@@ -68,7 +68,7 @@ class ItemImageLoader extends React.Component {
           classes={{ root: classNames, media: classes.media }} 
           onLoad={this.onLoad}
           height="auto"
-          image={data.img && ( BASE_IMG_URL+data.img )}
+          image={data.img && ( BASE_IMG_URL+dataFilePath+data.img )}
           title={data.title}
           alt-title={data.title}
           loading="lazy"

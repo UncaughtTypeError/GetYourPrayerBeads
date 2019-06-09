@@ -1,1 +1,11 @@
-export const BASE_IMG_URL = `./assets/images/`;
+export const BASE_IMG_URL = `./assets/images/`,
+             LOCATION_FILE_PATH = `locations/`,
+             REMNANTS_FILE_PATH = `remnants/`,
+             PROSTHETICS_FILE_PATH = `prosthetics/`,
+             UPGRADES_FILE_PATH = `upgrades/`,
+             UPGRADE_PARTS_FILE_PATH = `upgrade-parts/`,
+             UPGRADE_MATERIALS_FILE_PATH = `upgrade-materials/`,
+             SPECIAL_BOSSES_FILE_PATH = `special-bosses/`,
+             KEY_ITEMS_FILE_PATH = `key-items/`,
+             THUMBNAILS_FILE_PATH = `thumbnails/`,
+             MENU_ITEMS_FILE_PATH = `menu-items/`;

@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { NavLink } from 'react-router-dom';
+// Constants
+import { BASE_IMG_URL, MENU_ITEMS_FILE_PATH } from '../constants/constants';
 // Material Components
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
@@ -43,17 +45,18 @@ class HeaderNav extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
-    const prayerBeadsIcon = <img src='/assets/images/prayer-bead.png' alt="logo" width="50" />,
-          gourdSeedsIcon = <img src='/assets/images/gourd-seed.png' alt="logo" width="50" />,
-          remnantIcon = <img src='/assets/images/remnants.png' alt="logo" width="50" />,
-          prostheticsIcon = <img src='/assets/images/prosthetic.png' alt="logo" width="50" />,
-          treasureCarpScaleIcon = <img src='/assets/images/treasure-carp-scale.png' alt="logo" width="50" />,
-          upgradesIcon = <img src='/assets/images/prosthetic-upgrades.png' alt="logo" width="50" />,
-          upgradePartsIcon = <img src='/assets/images/prosthetic-upgrade-parts.png' alt="logo" width="50" />,
-          upgradeMaterialIcon = <img src='/assets/images/prosthetic-upgrade-materials.png' alt="logo" width="50" />,
-          specialBossIcon = <img src='/assets/images/special-bosses.png' alt="logo" width="50" />,
-          keyItemsIcon = <img src='/assets/images/key-items.png' alt="logo" width="50" />;
+    const { classes } = this.props,
+          IMG_FILE_PATH = BASE_IMG_URL+MENU_ITEMS_FILE_PATH;
+    const prayerBeadsIcon = <img src={`${IMG_FILE_PATH}prayer-bead.png`} alt="logo" width="50" />,
+          gourdSeedsIcon = <img src={`${IMG_FILE_PATH}gourd-seed.png`} alt="logo" width="50" />,
+          remnantIcon = <img src={`${IMG_FILE_PATH}remnants.png`} alt="logo" width="50" />,
+          prostheticsIcon = <img src={`${IMG_FILE_PATH}prosthetic.png`} alt="logo" width="50" />,
+          treasureCarpScaleIcon = <img src={`${IMG_FILE_PATH}treasure-carp-scale.png`} alt="logo" width="50" />,
+          upgradesIcon = <img src={`${IMG_FILE_PATH}prosthetic-upgrades.png`} alt="logo" width="50" />,
+          upgradePartsIcon = <img src={`${IMG_FILE_PATH}prosthetic-upgrade-parts.png`} alt="logo" width="50" />,
+          upgradeMaterialIcon = <img src={`${IMG_FILE_PATH}prosthetic-upgrade-materials.png`} alt="logo" width="50" />,
+          specialBossIcon = <img src={`${IMG_FILE_PATH}special-bosses.png`} alt="logo" width="50" />,
+          keyItemsIcon = <img src={`${IMG_FILE_PATH}key-items.png`} alt="logo" width="50" />;
 
     return (
       <div className={classes.root}>

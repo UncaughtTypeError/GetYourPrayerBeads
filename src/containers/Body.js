@@ -24,7 +24,7 @@ const styles = theme => ({
     minHeight: '100%',
     display: 'flex',
     padding: '100px 0',
-    background: 'url(/assets/images/sekiro-shadows-die-twice.jpg) center top fixed',
+    background: 'url(./assets/images/sekiro-shadows-die-twice.jpg) center top fixed',
     backgroundSize: 'cover',
     alignItems: 'start',
     flexWrap: 'wrap',
@@ -38,7 +38,7 @@ class Body extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Header />
           <Switch>
             <Route exact path="/" component={PrayerBeads} />

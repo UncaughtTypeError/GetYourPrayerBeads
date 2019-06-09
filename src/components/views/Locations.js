@@ -16,7 +16,7 @@ const styles = theme => ({
 });
 
 function DataLocationCard(props) {
-  const { classes, data, dataGeneral } = props;
+  const { classes, data, dataGeneral, dataFilePath } = props;
 
   return (
     <div>
@@ -26,6 +26,7 @@ function DataLocationCard(props) {
             <LocationDetails 
               data={data}
               dataGeneral={dataGeneral}
+              dataFilePath={dataFilePath}
             />
           </Grid>
         ))}

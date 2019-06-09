@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { NavLink } from 'react-router-dom';
+// Constants
+import { BASE_IMG_URL, MENU_ITEMS_FILE_PATH } from '../constants/constants';
 // Material Components
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -78,13 +80,14 @@ class FooterNavigation extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
-    const { route } = this.state;
-    const prayerBeadsIcon = <img src='/assets/images/prayer-bead.png' alt="logo" width="50" />,
-          gourdSeedsIcon = <img src='/assets/images/gourd-seed.png' alt="logo" width="50" />,
-          remnantIcon = <img src='/assets/images/remnants.png' alt="logo" width="50" />,
-          prostheticsIcon = <img src='/assets/images/prosthetic.png' alt="logo" width="50" />,
-          scaleIcon = <img src='/assets/images/treasure-carp-scale.png' alt="logo" width="50" />;
+    const { classes } = this.props,
+          { route } = this.state,
+          IMG_FILE_PATH = BASE_IMG_URL+MENU_ITEMS_FILE_PATH;
+    const prayerBeadsIcon = <img src={`${IMG_FILE_PATH}prayer-bead.png`} alt="logo" width="50" />,
+          gourdSeedsIcon = <img src={`${IMG_FILE_PATH}gourd-seed.png`} alt="logo" width="50" />,
+          remnantIcon = <img src={`${IMG_FILE_PATH}remnants.png`} alt="logo" width="50" />,
+          prostheticsIcon = <img src={`${IMG_FILE_PATH}prosthetic.png`} alt="logo" width="50" />,
+          scaleIcon = <img src={`${IMG_FILE_PATH}treasure-carp-scale.png`} alt="logo" width="50" />;
 
     return (
       <BottomNavigation

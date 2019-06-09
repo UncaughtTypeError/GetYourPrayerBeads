@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+// Constants
+import { PROSTHETICS_FILE_PATH } from '../constants/constants';
 // Components
 import PageTitle from '../components/PageTitle';
 import Items from '../components/views/Items';
@@ -31,7 +33,7 @@ function Remnants(props) {
     <div className={classes.root}>
       <PageTitle pagetitle={pagetitle} />
       <div className={classes.wrapper}>
-        <Items data={prosthetics} dataGeneral={prostheticsGen} />
+        <Items data={prosthetics} dataGeneral={prostheticsGen} dataFilePath={PROSTHETICS_FILE_PATH} />
       </div>
     </div>
   );

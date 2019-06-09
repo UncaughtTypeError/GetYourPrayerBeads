@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+// Constants
+import { KEY_ITEMS_FILE_PATH } from '../constants/constants';
 // Components
 import PageTitle from '../components/PageTitle';
 import Items from '../components/views/Items';
@@ -30,7 +32,7 @@ function KeyItems(props) {
       <PageTitle pagetitle={pagetitle} />
       <div className={classes.wrapper}>
         <FiltersProvider dataFilters={keyitemsFilters}>
-          <Items data={keyitems} dataGeneral={keyitemsGen} />
+          <Items data={keyitems} dataGeneral={keyitemsGen} dataFilePath={KEY_ITEMS_FILE_PATH} />
         </FiltersProvider>
       </div>
     </div>

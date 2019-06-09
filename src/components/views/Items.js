@@ -20,7 +20,7 @@ function DataItemCard(props) {
 
   const filtersState = useFilters();
 
-  const { classes, data, dataGeneral } = props;
+  const { classes, data, dataGeneral, dataFilePath } = props;
 
   return (
     <div>
@@ -33,6 +33,7 @@ function DataItemCard(props) {
                   <ItemDetails 
                     data={data}
                     dataGeneral={dataGeneral}
+                    dataFilePath={dataFilePath}
                   /> 
                 </Grid>
                 : null
@@ -42,6 +43,7 @@ function DataItemCard(props) {
             <ItemDetails 
               data={data}
               dataGeneral={dataGeneral}
+              dataFilePath={dataFilePath}
             /> 
           </Grid>
         ))}

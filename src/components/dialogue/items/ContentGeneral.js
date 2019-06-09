@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 // Constants
-import { BASE_IMG_URL } from '../../../constants/constants';
+import { BASE_IMG_URL, THUMBNAILS_FILE_PATH } from '../../../constants/constants';
 // Material Components
 import Divider from '@material-ui/core/Divider';
 import Avatar from '@material-ui/core/Avatar';
@@ -219,7 +219,7 @@ class ContentGeneral extends React.Component {
                 <TableBody>
                   <TableRow className={classes.dataRow}>
                     <TableCell scope="row" width="70">
-                      <img src={BASE_IMG_URL+data.parent.parent_img} alt={data.parent.parent_title} />
+                      <img src={BASE_IMG_URL+THUMBNAILS_FILE_PATH+data.parent.parent_img} alt={data.parent.parent_title} />
                     </TableCell>
                     <TableCell scope="row">
                       {data.parent.parent_title}

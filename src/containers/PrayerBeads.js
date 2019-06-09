@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+// Constants
+import { LOCATION_FILE_PATH } from '../constants/constants';
 // Components
 import PageTitle from '../components/PageTitle';
 import Locations from '../components/views/Locations';
@@ -28,7 +30,7 @@ function PrayerBeads(props) {
     <div className={classes.root}>
       <PageTitle pagetitle={pagetitle} />
       <div className={classes.wrapper}>
-        <Locations data={prayerbeads} dataGeneral={prayerbeadsGen} />
+        <Locations data={prayerbeads} dataGeneral={prayerbeadsGen} dataFilePath={LOCATION_FILE_PATH} />
       </div>
     </div>
   );

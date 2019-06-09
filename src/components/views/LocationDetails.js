@@ -97,7 +97,7 @@ const TextChip = withStyles({
 class LocationCard extends React.Component {
 
   render() {
-    const { classes, data, dataGeneral } = this.props;
+    const { classes, data, dataGeneral, dataFilePath } = this.props;
 
     return (
       <Card 
@@ -120,7 +120,7 @@ class LocationCard extends React.Component {
           offsetVertical={500}
           className={classes.lazyLoad}
         >
-          <ImageLoader data={data} />
+          <ImageLoader data={data} dataFilePath={dataFilePath} />
         </LazyLoad>
         <CardContent className={classes.cardContent}>
           <List className={classes.listAnno} disablePadding={true}>
