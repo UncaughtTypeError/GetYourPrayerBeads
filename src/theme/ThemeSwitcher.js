@@ -18,7 +18,7 @@ const ThemeSwitcher = () => {
 
   const themeState = useTheme();
 
-  let alternateTheme = localStorage.getItem("Inactive Theme");
+  let alternateTheme = localStorage.getItem("Inactive Theme") || 'Switch to Dark Theme';
 
   return (
     <Tooltip title={alternateTheme} placement="left">
