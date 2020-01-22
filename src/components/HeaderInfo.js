@@ -75,7 +75,7 @@ function HeaderInfo(props) {
 
   return (
     <React.Fragment>
-      <Typography variant="caption" display="block"><em>Get Your Prayer Beads</em> <small>v1.0</small></Typography>
+      <Typography variant="caption" display="block"><em>Get Your Prayer Beads</em> <small>v1.2</small></Typography>
       <Typography variant="caption" display="block" onClick={() => setOpen(true)} className={classes.anchorTxt}>Disclaimer</Typography>
       <Dialog
         onClose={() => setOpen(false)}
