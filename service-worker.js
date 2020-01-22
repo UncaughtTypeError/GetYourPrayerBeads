@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/GetYourPrayerBeads/precache-manifest.801061a5ddfd7e22fa9f59cc5174808f.js"
+  "/GetYourPrayerBeads/precache-manifest.6851506d313e7480a82e51250d7fed63.js"
 );
 
 self.addEventListener('message', (event) => {
