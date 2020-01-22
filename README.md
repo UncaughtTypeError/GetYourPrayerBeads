@@ -7,4 +7,10 @@
 - React Lazy Load
 - MaterialUI
 
-**hosted with GitHub Pages:** [uncaughttypeerror.github.io/GetYourPrayerBeads](https://uncaughttypeerror.github.io/GetYourPrayerBeads)
+### Other quirks:
+- hooks used to switch between dark and light themes as well as item filtering
+- local storage leveraged to retain preferred theme settings
+- React Lazy Load for image lazy loading
+- hosted with GitHub Pages
+
+**See:** [uncaughttypeerror.github.io/GetYourPrayerBeads](https://uncaughttypeerror.github.io/GetYourPrayerBeads)
